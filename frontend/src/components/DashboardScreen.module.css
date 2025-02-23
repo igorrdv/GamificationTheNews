@@ -1,0 +1,81 @@
+body {
+  font-family: "Verdana", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  overflow: hidden;
+}
+
+.img {
+  margin-top: 16rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.streakbox {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.boxes {
+  background-color: #ffffff;
+  border: 1px solid rgb(55 65 81);
+  border-width: 1px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5.5rem;
+}
+
+.readDay {
+  background-color: #ffce04 !important;
+  color: white !important;
+  border: 1px;
+}

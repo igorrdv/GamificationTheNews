@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int      @id @default(autoincrement())
+  subscriberId  String?  
+  email         String   @unique
+  status        String?
+  streak        Int      @default(0)
+  bestStreak    Int      @default(0) 
+  lastOpen      DateTime?
+  referringSite String?
+  createdAt     DateTime?
+  opens         Open[]
+}
+
+
+model Open {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  postId      String
+  openedAt    DateTime @default(now())
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  utmChannel  String?
+  user        User     @relation(fields: [userId], references: [id])
+}

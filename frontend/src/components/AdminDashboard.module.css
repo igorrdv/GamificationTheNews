@@ -1,0 +1,52 @@
+body {
+  margin-top: 10rem;
+}
+
+.dashboard-container {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ranking-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f8f8;
+}
